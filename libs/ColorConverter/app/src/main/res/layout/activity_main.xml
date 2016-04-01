@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.p8.colorconverter.MainActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Converter "
+        android:id="@+id/title"
+        android:layout_weight="0.36"
+        android:layout_alignParentStart="true"
+        android:textColor="#dc0e0e"
+        android:textSize="30dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextHue"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text="120" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextSaturation"
+        android:text="100"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/editTextHue"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextValue"
+        android:text="100"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="rbgvalue"
+        android:id="@+id/textViewRGB"
+        android:layout_marginTop="65dp"
+        android:layout_below="@+id/editTextValue"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONVERT"
+        android:id="@+id/buttonConvert"
+        android:onClick="onClick"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="saturation"
+        android:id="@+id/textView2"
+        android:layout_alignTop="@+id/editTextSaturation"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Hue"
+        android:id="@+id/textView"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/editTextHue"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Value"
+        android:id="@+id/textView3"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+
+</RelativeLayout>
